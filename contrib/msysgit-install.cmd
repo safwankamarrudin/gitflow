@@ -44,7 +44,7 @@ if %ERR%==1 choice /T 30 /C Y /D Y /M "Some unexpected errors happened. Sorry, y
 
 :End
 endlocal
-goto :EOF
+REM goto :EOF
 
 :AccessDenied
 set ERR=1
