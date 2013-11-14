@@ -43,8 +43,8 @@ xcopy "%~dp0\..\shFlags\src\shflags" "%GIT_HOME%\bin\gitflow-shFlags" /Y /R /F |
 if %ERR%==1 choice /T 30 /C Y /D Y /M "Some unexpected errors happened. Sorry, you'll have to fix them by yourself."
 
 :End
-endlocal
-REM goto :EOF
+REM endlocal & exit /B %ERR%
+goto :EOF
 
 :AccessDenied
 set ERR=1
